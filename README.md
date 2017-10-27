@@ -1,33 +1,19 @@
-## Use Azure app service editor
+# CloudShell Skill
+## Background
+This is a simple proof-of-concept bot that also works as a Cortana Skill. It uses the CloudShell Sandbox API to start sandboxes.
 
-1. make code change in the online editor
-2. open the console window and run
+## Screenshots
+Find the name of the Blueprint you want to use:
 
-```
-build.cmd
-```
+![](Screenshots/01.png)
 
-## Use Visual Studio 
+Tell Cortana:
 
-### Build and debug
-1. download source code zip and extract source in local folder
-2. open {PROJ_NAME}.sln in Visual Studio
-3. build and run the bot
-4. download and run [botframework-emulator](https://emulator.botframework.com/)
-5. connect the emulator to http://localhost:3987
+![](Screenshots/02.png)
 
-### Publish back
+Sandbox starts!
 
-In Visual Studio, right click on {PROJ_NAME} and select 'Publish'
+![](Screenshots/03.png)
 
-For first time publish after downloading source code
-1. In the publish profiles tab, click 'Import'
-2. Browse to 'PostDeployScripts' and pick '{SITE_NAME}.publishSettings'
-
-
-## Use continuous integration
-
-If you have setup continuous integration, then your bot will automatically deployed when new changes are pushed to the source repository.
-
-
-
+## Notice
+This is currently a proof-of-concept and does not prompt for authentication. Thus, it is not in the public marketplace yet. Once those features are added, it may be public.
